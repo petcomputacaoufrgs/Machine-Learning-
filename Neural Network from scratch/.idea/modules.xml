@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://D:/UFRGS/Fundamentos de Processamento de Imagem/Trabalhos FPI/Laboratório 1/.idea/Laboratório 1.iml" filepath="D:/UFRGS/Fundamentos de Processamento de Imagem/Trabalhos FPI/Laboratório 1/.idea/Laboratório 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Neural Network from scratch.iml" filepath="$PROJECT_DIR$/.idea/Neural Network from scratch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PyTorch models/.idea/PyTorch models.iml" filepath="$PROJECT_DIR$/../PyTorch models/.idea/PyTorch models.iml" />
+      <module fileurl="file://D:/UFRGS/PET/papagaio/.idea/papagaio.iml" filepath="D:/UFRGS/PET/papagaio/.idea/papagaio.iml" />
+    </modules>
+  </component>
+</project>
