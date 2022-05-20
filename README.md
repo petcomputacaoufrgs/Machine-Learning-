@@ -12,5 +12,5 @@ Ele foi feito com base nos conhecimentos adquiridos pelos petianos que trabalhar
 
 ## Redes Neurais
 Códigos:
-[Rede Neural XOR](Códigos/xor.py)
+[Rede Neural classe](Códigos/neural_network.py)
 ## LSTM
