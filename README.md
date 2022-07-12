@@ -1,3 +1,4 @@
+
 # Machine Learning
 Esse repositório tem o intuito de guiar interessados em aprender *Machine Learning*. 
 Ele foi feito com base nos conhecimentos adquiridos pelos petianos que trabalharam no [Projeto Papagaio](https://github.com/petcomputacaoufrgs/papagaio).
@@ -40,15 +41,15 @@ Abaixo temos duas abas, recomendamos que você veja os vídeos para aprender a t
 
 ### Exercícios para fixação
 Redes neurais são extremamente complicadas de entender sem praticar, principalmente a parte de backpropagation, que envolve muita matemática. 
-Segue abaixo uma lista de exercícios para praticar a construção de Redes Neurais. 
-Exercício 1:
+Segue abaixo uma lista de exercícios para praticar a construção de Redes Neurais. <br>
+**Exercício 1**:
 Desenvolva uma rede neural trivial para obter o valor desejado de y, conforme imagem abaixo:
 ![Exercicio 1](Códigos/Imagens/exercise_1.png)
 
 O *learning rate* e o número de épocas fica a seu critério. Os valores da imagem são apenas como referência.
 É recomendado tentar resolver esse exercício de maneira simples, apenas utilizando um laço *for* para iterar por múltiplas épocas do treino. O objetivo desse exercício é ter um primeiro contato com o forward e backward pass.
 
-Exercício 2:
+ **Exercício 2**:
 Modifique o exercício anterior, adicionando mais neurônios, conforme a imagem abaixo:
 ![Exercicio 2](Códigos/Imagens/exercise_2.png)
 ### Resoluções dos exercícios
