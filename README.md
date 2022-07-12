@@ -53,7 +53,7 @@ O *learning rate* e o número de épocas fica a seu critério. Os valores da ima
 Modifique o exercício anterior, adicionando mais neurônios, conforme a imagem abaixo:
 ![Exercicio 2](Códigos/Imagens/exercise_2.png)
 ### Resoluções dos exercícios
-[Exercícios 1 e 2](dummy_neural_network.ipynb)
+[Exercícios 1 e 2](Códigos/dummy_neural_network.ipynb)
 
 
 
