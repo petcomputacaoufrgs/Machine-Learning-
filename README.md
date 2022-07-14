@@ -62,14 +62,15 @@ x = [[0,0], [1, 0], [1, 1], [0, 1]]
 y = [0, 0, 1, 0]
 ```
 Para resolver esse problema, é necessário utilizar os conhecimentos obtidos dos exercícios anteriores de forward e backward pass, e adicionar a função de ativação Sigmoide na camada de saída, já que o XOR não é linearmente separável. Diagrama da rede:<br>
-![Exercicio 3](Códigos/Imagens/exercise_3.png)
+![Exercicio 3](Códigos/Imagens/exercise_3.png)<br>
 Os pesos devem ser inicializados utilizando a função [randn do NumPy](https://numpy.org/doc/stable/reference/random/generated/numpy.random.randn.html) e os bias devem ser 1. <br>
 Para esse exercício, utilize o learning rate de 0.2 e 5000 épocas como referência. <br>
 É esperado que ao final do treino a loss convirja para próximo de 0, e a rede neural acerte todas combinações da XOR.
 
 ### Resoluções dos exercícios
-É fundamental olhar as resoluções somente após tentar fazer os exercícios por conta. 
+É fundamental olhar as resoluções somente após tentar fazer os exercícios por conta. <br>
 [Exercícios 1 e 2](dummy_neural_network.ipynb)
+[Exercício 3](xor_simple.ipynb)
 
 
 
