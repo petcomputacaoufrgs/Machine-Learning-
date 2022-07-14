@@ -69,8 +69,8 @@ Para esse exercício, utilize o learning rate de 0.2 e 5000 épocas como referê
 
 ### Resoluções dos exercícios
 É fundamental olhar as resoluções somente após tentar fazer os exercícios por conta. <br>
-[Exercícios 1 e 2](dummy_neural_network.ipynb)
-[Exercício 3](xor_simple.ipynb)
+[Exercícios 1 e 2](Códigos/dummy_neural_network.ipynb)<br>
+[Exercício 3](Códigos/xor_simple.ipynb)
 
 
 
