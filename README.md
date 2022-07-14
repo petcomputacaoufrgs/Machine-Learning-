@@ -67,10 +67,39 @@ Os pesos devem ser inicializados utilizando a função [randn do NumPy](https://
 Para esse exercício, utilize o learning rate de 0.2 e 5000 épocas como referência. <br>
 É esperado que ao final do treino a loss convirja para próximo de 0, e a rede neural acerte todas combinações da XOR.
 
+**Exercício 4**:
+Generalize o exercício anterior, adicionando uma classe para as camadas e outra para a própria rede neural.<br>
+Segue abaixo uma sugestão para a interface das classes:<br>
+```python
+class Layer:  
+    def __init__(self, n_of_inputs: int, n_of_neurons: int , activation, bias: float=0.0):  
+        pass
+  
+    def forward(self, x):  
+        pass
+  
+    def backward(self, chain_rule_derivatives):  
+	    pass
+  
+ class NeuralNetwork:  
+    def __init__(self, input_size, lr):  
+        pass
+  
+    def forward(self, x):  
+        pass
+  
+    def backward(self, loss_derivative):  
+        pass
+  
+    def append_layer(self, output_number: int, activation, bias: float=0.0):  
+		pass
+``` 
+
 ### Resoluções dos exercícios
 É fundamental olhar as resoluções somente após tentar fazer os exercícios por conta. <br>
-[Exercícios 1 e 2](Códigos/dummy_neural_network.ipynb)<br>
-[Exercício 3](Códigos/xor_simple.ipynb)
+[Exercícios 1 e 2](dummy_neural_network.ipynb)<br>
+[Exercício 3](xor_simple.ipynb)<br>
+[Exercício 4](xor_from_scratch.ipynb)<br>
 
 
 
