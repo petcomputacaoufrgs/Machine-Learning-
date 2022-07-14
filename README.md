@@ -79,7 +79,7 @@ class Layer:
         pass
   
     def backward(self, chain_rule_derivatives):  
-	    pass
+	pass
   
  class NeuralNetwork:  
     def __init__(self, input_size, lr):  
@@ -92,14 +92,14 @@ class Layer:
         pass
   
     def append_layer(self, output_number: int, activation, bias: float=0.0):  
-		pass
+	pass
 ``` 
 
 ### Resoluções dos exercícios
 É fundamental olhar as resoluções somente após tentar fazer os exercícios por conta. <br>
-[Exercícios 1 e 2](dummy_neural_network.ipynb)<br>
-[Exercício 3](xor_simple.ipynb)<br>
-[Exercício 4](xor_from_scratch.ipynb)<br>
+[Exercícios 1 e 2](Códigos/dummy_neural_network.ipynb)<br>
+[Exercício 3](Códigos/xor_simple.ipynb)<br>
+[Exercício 4](Códigos/xor_from_scratch.ipynb)<br>
 
 
 
