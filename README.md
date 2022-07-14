@@ -40,20 +40,37 @@ Abaixo temos duas abas, recomendamos que você veja os vídeos para aprender a t
 
 
 ### Exercícios para fixação
-Redes neurais são extremamente complicadas de entender sem praticar, principalmente a parte de backpropagation, que envolve muita matemática. 
+Redes neurais são extremamente complicadas de entender sem praticar, principalmente a parte de backpropagation, que envolve muita matemática. <br>
 Segue abaixo uma lista de exercícios para praticar a construção de Redes Neurais. <br>
 **Exercício 1**:
 Desenvolva uma rede neural trivial para obter o valor desejado de y, conforme imagem abaixo:
 ![Exercicio 1](Códigos/Imagens/exercise_1.png)
 
 O *learning rate* e o número de épocas fica a seu critério. Os valores da imagem são apenas como referência.
-É recomendado tentar resolver esse exercício de maneira simples, apenas utilizando um laço *for* para iterar por múltiplas épocas do treino. O objetivo desse exercício é ter um primeiro contato com o forward e backward pass.
+É recomendado tentar resolver esse exercício de maneira simples, apenas utilizando um laço *for* para iterar por múltiplas épocas do treino. O objetivo desse exercício é ter um primeiro contato com o forward e backward pass, observando como muda a loss, o peso e o valor de saída da rede.
 
  **Exercício 2**:
 Modifique o exercício anterior, adicionando mais neurônios, conforme a imagem abaixo:
 ![Exercicio 2](Códigos/Imagens/exercise_2.png)
+Preste atenção em como a loss cai em comparação ao exercício anterior. 
+
+**Exercício 3**:
+Construa uma rede neural que simule o portão lógico XOR. 
+```python
+# Tabela verdade XOR
+x = [[0,0], [1, 0], [1, 1], [0, 1]]  
+y = [0, 0, 1, 0]
+```
+Para resolver esse problema, é necessário utilizar os conhecimentos obtidos dos exercícios anteriores de forward e backward pass, e adicionar a função de ativação Sigmoide na camada de saída, já que o XOR não é linearmente separável. Diagrama da rede:<br>
+![Exercicio 3](Códigos/Imagens/exercise_3.png)
+Os pesos devem ser inicializados utilizando a função [randn do NumPy](https://numpy.org/doc/stable/reference/random/generated/numpy.random.randn.html) e os bias devem ser 1. <br>
+Para esse exercício, utilize o learning rate de 0.2 e 5000 épocas como referência. <br>
+É esperado que ao final do treino a loss convirja para próximo de 0, e a rede neural acerte todas combinações da XOR.
+
 ### Resoluções dos exercícios
-[Exercícios 1 e 2](Códigos/dummy_neural_network.ipynb)
+É fundamental olhar as resoluções somente após tentar fazer os exercícios por conta. 
+[Exercícios 1 e 2](dummy_neural_network.ipynb)
+
 
 
 
