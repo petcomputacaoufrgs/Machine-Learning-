@@ -92,7 +92,8 @@ class Layer:
   
     def append_layer(self, output_number, activation, bias):  
 	pass
-``` <br>
+``` 
+<br>
 Utilize a biblioteca NumPy para construir as matrizes dos pesos e dos bias. 
 **Exercício 5**
 Utilizando a rede construída no exercício anterior, construa um modelo para classificar as imagens dos dígitos escritos à mão do [dataset MNIST](https://en.wikipedia.org/wiki/MNIST_database). 
