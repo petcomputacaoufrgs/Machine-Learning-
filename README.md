@@ -1,3 +1,4 @@
+
 # Machine Learning
 Esse repositório tem o intuito de guiar interessados em aprender *Machine Learning*. 
 Ele foi feito escrito pelos petianos Pedro Miola e Vítor Caruso, com base nos conhecimentos adquiridos quando trabalharam no [Projeto Papagaio](https://github.com/petcomputacaoufrgs/papagaio).
@@ -12,19 +13,18 @@ Na programação convencional, damos ordens para o computador fazer uma tarefa p
 
 Mesmo com conhecimentos básicos de IA já podemos fazer vários projetos legais, como criar uma IA's que jogue os mais diversos jogos como: [Conecte4](https://www.youtube.com/watch?v=XRVA5PMSKKE), [Jump King](https://www.youtube.com/watch?v=DmQ4Dqxs0HI), etc.
 
-
-(videos)
-
-
-
 ### Pré requisitos
-Álgebra linear, conceitos de derivada, python, numpy 
-
-
+- Álgebra linear
+- Conceitos de derivada e gradiente
+-  Python
+- NumPy 
 
 ### Recomendações
 [Coursera - Supervised Machine Learning: Regression and Classification](https://www.coursera.org/learn/machine-learning?specialization=machine-learning-introduction): esse curso é uma excelente base para quem está começando, porque ele aborda tudo que é necessário aprender de uma forma bem didática, com exercícios teóricos e práticos. Entretanto, as aulas podem acabar sendo muito pesadas, pois o conteúdo é apresentado detalhadamente. <br>
-[Curso de Machine Learning - PET Computação](https://petcompufrgs.github.io/ml-course/): desenvolvido pelo ex-petiano Thiago, esse curso encapsula todos os conceitos de Machine Learning sucintamente, em forma de texto. É um excelente material para complementar os estudos de Machine Learning.
+[Curso de Machine Learning - PET Computação](https://petcompufrgs.github.io/ml-course/): desenvolvido pelo ex-petiano Thiago, esse curso encapsula todos os conceitos de Machine Learning sucintamente, em forma de texto. É um excelente material para complementar os estudos de Machine Learning.<br>
+[3B1B -  A essência da álgebra linear](https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&ab_channel=3Blue1Brown)<br>
+[3B1B - A essência do cálculo](https://www.youtube.com/watch?v=WUvTyaaNkzM&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&ab_channel=3Blue1Brown)<br>
+[Curso Python - Curso em Vídeo](https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLHz_AreHm4dlKP6QQCekuIPky1CiwmdI6&ab_channel=CursoemV%C3%ADdeo)<br>
 
 ## Redes Neurais
 Regressão linear e regressão logística são apenas a ponta do iceberg na área de Machine Learning. Com esses modelos, temos claras limitações devido à falta de complexidade. Nesse contexto, as redes neurais foram desenvolvidas para que se pudesse construir modelos muito mais profundos, capazes de resolver uma gama muito maior de problemas. <br>
@@ -110,8 +110,8 @@ O PyTorch é um framework open-source utilizado para Machine Learning desenvolvi
 já que ele facilita imensamente o processo de criação e treinamento de modelos. 
 
 ### Recomendações
-[Site PyTorch](https://pytorch.org/tutorials/): o próprio site do PyTorch possui tutoriais excelentes.
-[Esqueleto PyTorch](https://foggy-antler-b88.notion.site/Esqueleto-dos-modelos-a1161909a21d42f2980229b2892cff3a): bom para ter uma noção inicial de como o código do modelo é estruturado no PyTorch.
+[Site PyTorch](https://pytorch.org/tutorials/): o próprio site do PyTorch possui tutoriais excelentes.<br>
+[Esqueleto PyTorch](https://foggy-antler-b88.notion.site/Esqueleto-dos-modelos-a1161909a21d42f2980229b2892cff3a): um bom texto para ter uma noção inicial de como o código do modelo é estruturado no PyTorch.<br>
 
 ### Exercícios para fixação
 
