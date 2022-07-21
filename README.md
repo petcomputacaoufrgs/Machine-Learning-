@@ -1,18 +1,17 @@
-
 # Machine Learning
 Esse repositório tem o intuito de guiar interessados em aprender *Machine Learning*. 
-Ele foi feito com base nos conhecimentos adquiridos pelos petianos que trabalharam no [Projeto Papagaio](https://github.com/petcomputacaoufrgs/papagaio).
+Ele foi feito escrito pelos petianos Pedro Miola e Vítor Caruso, com base nos conhecimentos adquiridos quando trabalharam no [Projeto Papagaio](https://github.com/petcomputacaoufrgs/papagaio).
 ### Tabela de conteúdos
 **[Introdução](#introdução)**<br>
 **[Redes Neurais](#redes-neurais)**<br>
+**[PyTorch](#pytorch)**<br>
 **[LSTM](#lstm)**<br>
 
 ## Introdução
-Na programação convencional, damos ordens para o computador fazer uma tarefa para gerar um resultado. Com Machine Learning, nós damos o resultado para o computador, e deixamos ele aprender o melhor jeito de fazer a tarefa. Machine Learning nos permite fazer coisas (...).
+Na programação convencional, damos ordens para o computador fazer uma tarefa para gerar um resultado. Com Machine Learning, nós damos o resultado para o computador, e deixamos ele aprender o melhor jeito de fazer a tarefa. Com essa poderosa ferramenta podemos criar aplicações muito complexas como: [criar imagens por meio de textos](https://huggingface.co/spaces/dalle-mini/dalle-mini), fazer algoritmos de recomendação personalizados para cada usuário, reconhecer e-mails de spam e entre outras inúmeras aplicações.
 
-(videos)
+Mesmo com conhecimentos básicos de IA já podemos fazer vários projetos legais, como criar uma IA's que jogue os mais diversos jogos como: [Conecte4](https://www.youtube.com/watch?v=XRVA5PMSKKE), [Jump King](https://www.youtube.com/watch?v=DmQ4Dqxs0HI), etc.
 
-E mesmo com conhecimentos básicos, também conseguimos fazer coisas incríveis:
 
 (videos)
 
@@ -30,7 +29,7 @@ E mesmo com conhecimentos básicos, também conseguimos fazer coisas incríveis:
 ## Redes Neurais
 Regressão linear e regressão logística são apenas a ponta do iceberg na área de Machine Learning. Com esses modelos, temos claras limitações devido à falta de complexidade. Nesse contexto, as redes neurais foram desenvolvidas para que se pudesse construir modelos muito mais profundos, capazes de resolver uma gama muito maior de problemas. <br>
 Para conseguir entender as redes neurais, é extremamente necessário que você, após entender a teoria, bote a mão na massa e tente fazer suas próprias redes, a fim de entender como todo o processo dela funciona. <br>
-Abaixo temos duas abas, recomendamos que você veja os vídeos para aprender a teoria, e depois tentem fazer os códigos por conta, apenas consultando quando surgirem dúvidas. 
+Abaixo temos duas abas, recomendamos que você veja os vídeos para aprender a teoria, e depois tente fazer os códigos por conta, apenas consultando quando surgirem dúvidas. 
 
 ### Recomendações
 [Redes neurais - 3b1b](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi): é uma ótima série de vídeos para se ter uma visão inicial sobre os conceitos de Redes Neurais. Recomenda-se começar o estudo de Redes Neurais com essa playlist.
@@ -38,10 +37,10 @@ Abaixo temos duas abas, recomendamos que você veja os vídeos para aprender a t
 [Coursera - Advanced Learning Algorithms](https://www.coursera.org/learn/advanced-learning-algorithms?specialization=machine-learning-introduction#syllabus)
 
 
-
 ### Exercícios para fixação
-Redes neurais são extremamente complicadas de entender sem praticar, principalmente a parte de backpropagation, que envolve muita matemática. <br>
-Segue abaixo uma lista de exercícios para praticar a construção de Redes Neurais. <br>
+Redes neurais são extremamente complicadas de entender sem praticar, principalmente a parte de backpropagation, que envolve muita matemática. 
+Por causa disso recomenda-se tentar implementar redes neurais à mão, o qual é o objeto dos exercícios a seguir<br>
+
 **Exercício 1**:
 Desenvolva uma rede neural trivial para obter o valor desejado de y, conforme imagem abaixo:
 ![Exercicio 1](Códigos/Imagens/exercise_1.png)
@@ -50,7 +49,7 @@ O *learning rate* e o número de épocas fica a seu critério. Os valores da ima
 É recomendado tentar resolver esse exercício de maneira simples, apenas utilizando um laço *for* para iterar por múltiplas épocas do treino. O objetivo desse exercício é ter um primeiro contato com o forward e backward pass, observando como muda a loss, o peso e o valor de saída da rede.
 
  **Exercício 2**:
-Modifique o exercício anterior, adicionando mais neurônios, conforme a imagem abaixo:
+Modifique o exercício anterior, adicionando uma camada oculta com 2 neurônios e um bias para cada camada, conforme a imagem abaixo:
 ![Exercicio 2](Códigos/Imagens/exercise_2.png)
 Preste atenção em como a loss cai em comparação ao exercício anterior. 
 
@@ -72,7 +71,7 @@ Generalize o exercício anterior, adicionando uma classe para as camadas e outra
 Segue abaixo uma sugestão para a interface das classes:<br>
 ```python
 class Layer:  
-    def __init__(self, n_of_inputs: int, n_of_neurons: int , activation, bias: float=0.0):  
+    def __init__(self, n_of_inputs, n_of_neurons, activation, bias):  
         pass
   
     def forward(self, x):  
@@ -91,22 +90,36 @@ class Layer:
     def backward(self, loss_derivative):  
         pass
   
-    def append_layer(self, output_number: int, activation, bias: float=0.0):  
+    def append_layer(self, output_number, activation, bias):  
 	pass
-``` 
+``` <br>
+Utilize a biblioteca NumPy para construir as matrizes dos pesos e dos bias. 
+**Exercício 5**
+Utilizando a rede construída no exercício anterior, construa um modelo para classificar as imagens dos dígitos escritos à mão do [dataset MNIST](https://en.wikipedia.org/wiki/MNIST_database). 
+Baixe o dataset [diretamente](http://yann.lecun.com/exdb/mnist/), ou utilizando o [PyTorch](http://yann.lecun.com/exdb/mnist/). Utilize o NumPy para lidar com os dados.
 
 ### Resoluções dos exercícios
 É fundamental olhar as resoluções somente após tentar fazer os exercícios por conta. <br>
 [Exercícios 1 e 2](Códigos/dummy_neural_network.ipynb)<br>
 [Exercício 3](Códigos/xor_simple.ipynb)<br>
 [Exercício 4](Códigos/xor_from_scratch.ipynb)<br>
+[Exercício 5](Códigos/mnist_from_scratch.ipynb)<br>
 
+## PyTorch
+O PyTorch é um framework open-source utilizado para Machine Learning desenvolvido pelo Facebook. Aprender um framework é fundamental para Machine Learning,
+já que ele facilita imensamente o processo de criação e treinamento de modelos. 
 
+### Recomendações
+[Site PyTorch](https://pytorch.org/tutorials/): o próprio site do PyTorch possui tutoriais excelentes.
+[Esqueleto PyTorch](https://foggy-antler-b88.notion.site/Esqueleto-dos-modelos-a1161909a21d42f2980229b2892cff3a): bom para ter uma noção inicial de como o código do modelo é estruturado no PyTorch.
 
+### Exercícios para fixação
 
-
+**Exercício 6**
+Construa o código do **[Exercício 5](#exercicio-5)** utilizando o PyTorch.
  
-
+### Resoluções dos exercícios
+[Exercício 6](Códigos/mnist_pytorch.ipynb)<br>
 
 
 ## LSTM
