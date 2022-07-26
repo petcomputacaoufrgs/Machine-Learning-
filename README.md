@@ -1,7 +1,7 @@
-
+  
 # Machine Learning
 Esse repositório tem o intuito de guiar interessados em aprender *Machine Learning*. 
-Ele foi feito escrito pelos petianos Pedro Miola e Vítor Caruso, com base nos conhecimentos adquiridos quando trabalharam no [Projeto Papagaio](https://github.com/petcomputacaoufrgs/papagaio).
+Ele foi feito pelos petianos Pedro Poli Miola e Vítor Caruso Rodrigues Ferrer, com base nos conhecimentos adquiridos no [Projeto Papagaio](https://github.com/petcomputacaoufrgs/papagaio).
 ### Tabela de conteúdos
 **[Introdução](#introdução)**<br>
 **[Redes Neurais](#redes-neurais)**<br>
@@ -11,20 +11,26 @@ Ele foi feito escrito pelos petianos Pedro Miola e Vítor Caruso, com base nos c
 ## Introdução
 Na programação convencional, damos ordens para o computador fazer uma tarefa para gerar um resultado. Com Machine Learning, nós damos o resultado para o computador, e deixamos ele aprender o melhor jeito de fazer a tarefa. Com essa poderosa ferramenta podemos criar aplicações muito complexas como: [criar imagens por meio de textos](https://huggingface.co/spaces/dalle-mini/dalle-mini), fazer algoritmos de recomendação personalizados para cada usuário, reconhecer e-mails de spam e entre outras inúmeras aplicações.
 
-Mesmo com conhecimentos básicos de IA já podemos fazer vários projetos legais, como criar uma IA's que jogue os mais diversos jogos como: [Conecte4](https://www.youtube.com/watch?v=XRVA5PMSKKE), [Jump King](https://www.youtube.com/watch?v=DmQ4Dqxs0HI), etc.
+Mesmo com conhecimentos básicos de IA já podemos fazer vários projetos legais, como criar uma IA's que jogue os mais diversos jogos como:
+- [Jogo do dinossauro](https://www.youtube.com/watch?v=NZlIYr1slAk)
+- [Jump King](https://www.youtube.com/watch?v=DmQ4Dqxs0HI)
+- [Mario](https://www.youtube.com/watch?v=qv6UVOQ0F44)
 
 ### Pré requisitos
+Esses conhecimentos são necessários para se tirar o maior proveito do guia
 - Álgebra linear
 - Conceitos de derivada e gradiente
 -  Python
 - NumPy 
 
+Abaixo seguem playlists para quem se interessa sobre os assuntos acima citados:<br>
+- [3B1B -  A essência da álgebra linear](https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&ab_channel=3Blue1Brown)<br>
+- [3B1B - A essência do cálculo](https://www.youtube.com/watch?v=WUvTyaaNkzM&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&ab_channel=3Blue1Brown)<br>
+- [Curso Python - Curso em Vídeo](https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLHz_AreHm4dlKP6QQCekuIPky1CiwmdI6&ab_channel=CursoemV%C3%ADdeo)<br>
 ### Recomendações
 [Coursera - Supervised Machine Learning: Regression and Classification](https://www.coursera.org/learn/machine-learning?specialization=machine-learning-introduction): esse curso é uma excelente base para quem está começando, porque ele aborda tudo que é necessário aprender de uma forma bem didática, com exercícios teóricos e práticos. Entretanto, as aulas podem acabar sendo muito pesadas, pois o conteúdo é apresentado detalhadamente. <br>
 [Curso de Machine Learning - PET Computação](https://petcompufrgs.github.io/ml-course/): desenvolvido pelo ex-petiano Thiago, esse curso encapsula todos os conceitos de Machine Learning sucintamente, em forma de texto. É um excelente material para complementar os estudos de Machine Learning.<br>
-[3B1B -  A essência da álgebra linear](https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&ab_channel=3Blue1Brown)<br>
-[3B1B - A essência do cálculo](https://www.youtube.com/watch?v=WUvTyaaNkzM&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&ab_channel=3Blue1Brown)<br>
-[Curso Python - Curso em Vídeo](https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLHz_AreHm4dlKP6QQCekuIPky1CiwmdI6&ab_channel=CursoemV%C3%ADdeo)<br>
+
 
 ## Redes Neurais
 Regressão linear e regressão logística são apenas a ponta do iceberg na área de Machine Learning. Com esses modelos, temos claras limitações devido à falta de complexidade. Nesse contexto, as redes neurais foram desenvolvidas para que se pudesse construir modelos muito mais profundos, capazes de resolver uma gama muito maior de problemas. <br>
@@ -94,7 +100,7 @@ class Layer:
 	pass
 ``` 
 Utilize a biblioteca NumPy para construir as matrizes dos pesos e dos bias.<br>
-**Exercício 5**
+**Exercício 5**:
 Utilizando a rede construída no exercício anterior, construa um modelo para classificar as imagens dos dígitos escritos à mão do [dataset MNIST](https://en.wikipedia.org/wiki/MNIST_database). 
 Baixe o dataset [diretamente](http://yann.lecun.com/exdb/mnist/) ou utilizando o [PyTorch](http://yann.lecun.com/exdb/mnist/)
 
@@ -115,7 +121,7 @@ já que ele facilita imensamente o processo de criação e treinamento de modelo
 
 ### Exercícios para fixação
 
-**Exercício 6**
+**Exercício 6**:
 Construa o código do **[Exercício 5](#exercicio-5)** utilizando o PyTorch.
  
 ### Resoluções dos exercícios
