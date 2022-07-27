@@ -1,6 +1,7 @@
+
   
-# Machine Learning
-Esse repositório tem o intuito de guiar interessados em aprender *Machine Learning*. 
+# Guia de Machine Learning
+Esse repositório tem o intuito de guiar interessados em aprender Machine Learning. 
 Ele foi feito pelos petianos Pedro Poli Miola e Vítor Caruso Rodrigues Ferrer, com base nos conhecimentos adquiridos no [Projeto Papagaio](https://github.com/petcomputacaoufrgs/papagaio).
 ### Tabela de conteúdos
 **[Introdução](#introdução)**<br>
@@ -28,7 +29,7 @@ Abaixo seguem playlists para quem se interessa sobre os assuntos acima citados:<
 - [3B1B - A essência do cálculo](https://www.youtube.com/watch?v=WUvTyaaNkzM&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&ab_channel=3Blue1Brown)<br>
 - [Curso Python - Curso em Vídeo](https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLHz_AreHm4dlKP6QQCekuIPky1CiwmdI6&ab_channel=CursoemV%C3%ADdeo)<br>
 ### Recomendações
-[Coursera - Supervised Machine Learning: Regression and Classification](https://www.coursera.org/learn/machine-learning?specialization=machine-learning-introduction): esse curso é uma excelente base para quem está começando, porque ele aborda tudo que é necessário aprender de uma forma bem didática, com exercícios teóricos e práticos. Entretanto, as aulas podem acabar sendo muito pesadas, pois o conteúdo é apresentado detalhadamente. <br>
+[Coursera - Supervised Machine Learning: Regression and Classification](https://www.coursera.org/learn/machine-learning?specialization=machine-learning-introduction): esse curso é uma excelente base para quem está começando, porque ele aborda tudo que é necessário aprender de uma forma bem didática, com exercícios teóricos e práticos, pelo professor Andrew Ng, referência na área. Entretanto, as aulas podem acabar sendo muito pesadas, pois o conteúdo é apresentado detalhadamente. <br>
 [Curso de Machine Learning - PET Computação](https://petcompufrgs.github.io/ml-course/): desenvolvido pelo ex-petiano Thiago, esse curso encapsula todos os conceitos de Machine Learning sucintamente, em forma de texto. É um excelente material para complementar os estudos de Machine Learning.<br>
 
 
@@ -40,26 +41,26 @@ Abaixo temos duas abas, recomendamos que você veja os vídeos para aprender a t
 ### Recomendações
 [Redes neurais - 3b1b](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi): é uma ótima série de vídeos para se ter uma visão inicial sobre os conceitos de Redes Neurais. Recomenda-se começar o estudo de Redes Neurais com essa playlist.
 
-[Coursera - Advanced Learning Algorithms](https://www.coursera.org/learn/advanced-learning-algorithms?specialization=machine-learning-introduction#syllabus)
+[Coursera - Advanced Learning Algorithms](https://www.coursera.org/learn/advanced-learning-algorithms?specialization=machine-learning-introduction#syllabus): continuação do curso visto na sessão anterior, agora focando em Redes Neurais e conselhos em relação à Machine Learning no geral. 
 
 
 ### Exercícios para fixação
-Redes neurais são extremamente complicadas de entender sem praticar, principalmente a parte de backpropagation, que envolve muita matemática. 
+Redes neurais são extremamente complicadas de entender sem praticar, principalmente a backpropagation, que envolve muita matemática. 
 Por causa disso recomenda-se tentar implementar redes neurais à mão, o qual é o objeto dos exercícios a seguir<br>
 
-**Exercício 1**:
+**Exercício 1**:<br>
 Desenvolva uma rede neural trivial para obter o valor desejado de y, conforme imagem abaixo:
 ![Exercicio 1](Códigos/Imagens/exercise_1.png)
 
 O *learning rate* e o número de épocas fica a seu critério. Os valores da imagem são apenas como referência.
 É recomendado tentar resolver esse exercício de maneira simples, apenas utilizando um laço *for* para iterar por múltiplas épocas do treino. O objetivo desse exercício é ter um primeiro contato com o forward e backward pass, observando como muda a loss, o peso e o valor de saída da rede.
 
- **Exercício 2**:
+ **Exercício 2**:<br>
 Modifique o exercício anterior, adicionando uma camada oculta com 2 neurônios e um bias para cada camada, conforme a imagem abaixo:
 ![Exercicio 2](Códigos/Imagens/exercise_2.png)
 Preste atenção em como a loss cai em comparação ao exercício anterior. 
 
-**Exercício 3**:
+**Exercício 3**:<br>
 Construa uma rede neural que simule o portão lógico XOR. 
 ```python
 # Tabela verdade XOR
@@ -72,7 +73,7 @@ Os pesos devem ser inicializados utilizando a função [randn do NumPy](https://
 Para esse exercício, utilize o learning rate de 0.2 e 5000 épocas como referência. <br>
 É esperado que ao final do treino a loss convirja para próximo de 0, e a rede neural acerte todas combinações da XOR.
 
-**Exercício 4**:
+**Exercício 4**:<br>
 Generalize o exercício anterior, adicionando uma classe para as camadas e outra para a própria rede neural.<br>
 Segue abaixo uma sugestão para a interface das classes:<br>
 ```python
@@ -100,7 +101,7 @@ class Layer:
 	pass
 ``` 
 Utilize a biblioteca NumPy para construir as matrizes dos pesos e dos bias.<br>
-**Exercício 5**:
+**Exercício 5**:<br>
 Utilizando a rede construída no exercício anterior, construa um modelo para classificar as imagens dos dígitos escritos à mão do [dataset MNIST](https://en.wikipedia.org/wiki/MNIST_database). 
 Baixe o dataset [diretamente](http://yann.lecun.com/exdb/mnist/) ou utilizando o [PyTorch](http://yann.lecun.com/exdb/mnist/)
 
@@ -121,7 +122,7 @@ já que ele facilita imensamente o processo de criação e treinamento de modelo
 
 ### Exercícios para fixação
 
-**Exercício 6**:
+**Exercício 6**:<br>
 Construa o código do **[Exercício 5](#exercicio-5)** utilizando o PyTorch.
  
 ### Resoluções dos exercícios
