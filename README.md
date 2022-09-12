@@ -2,7 +2,7 @@
   
 # Guia de Machine Learning
 Esse repositório tem o intuito de guiar interessados em aprender Machine Learning. 
-Ele foi feito pelos petianos Pedro Poli Miola e Vítor Caruso Rodrigues Ferrer, com base nos conhecimentos adquiridos no [Projeto Papagaio](https://github.com/petcomputacaoufrgs/papagaio).
+Ele foi feito pelos petianos Pedro Poli Miola e Vítor Caruso Rodrigues Ferrer, com base nos conhecimentos adquiridos no [Projeto Papagaio](https://github.com/petcomputacaoufrgs/papagaio). O repositório está aberto a atualizações, conforme novos petianos forem aprendendo sobre mais áreas de Machine Learning. 
 ### Tabela de conteúdos
 **[Introdução](#introdução)**<br>
 **[Redes Neurais](#redes-neurais)**<br>
@@ -18,10 +18,10 @@ Mesmo com conhecimentos básicos de IA já podemos fazer vários projetos legais
 - [Mario](https://www.youtube.com/watch?v=qv6UVOQ0F44)
 
 ### Pré requisitos
-Esses conhecimentos são necessários para se tirar o maior proveito do guia
+Esses conhecimentos são necessários para se tirar melhor proveito do guia:
 - Álgebra linear
 - Conceitos de derivada e gradiente
--  Python
+- Python
 - NumPy 
 
 Abaixo seguem playlists para quem se interessa sobre os assuntos acima citados:<br>
@@ -34,12 +34,12 @@ Abaixo seguem playlists para quem se interessa sobre os assuntos acima citados:<
 
 
 ## Redes Neurais
-Regressão linear e regressão logística são apenas a ponta do iceberg na área de Machine Learning. Com esses modelos, temos claras limitações devido à falta de complexidade. Nesse contexto, as redes neurais foram desenvolvidas para que se pudesse construir modelos muito mais profundos, capazes de resolver uma gama muito maior de problemas. <br>
+Regressão linear e regressão logística são apenas os dois modelos mais simples de Machine Learning. Com esses modelos, temos claras limitações devido à falta de complexidade. Nesse contexto, as redes neurais foram desenvolvidas para que se pudesse construir modelos muito mais profundos, capazes de resolver uma gama muito maior de problemas. <br>
 Para conseguir entender as redes neurais, é extremamente necessário que você, após entender a teoria, bote a mão na massa e tente fazer suas próprias redes, a fim de entender como todo o processo dela funciona. <br>
 Abaixo temos duas abas, recomendamos que você veja os vídeos para aprender a teoria, e depois tente fazer os códigos por conta, apenas consultando quando surgirem dúvidas. 
 
 ### Recomendações
-[Redes neurais - 3b1b](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi): é uma ótima série de vídeos para se ter uma visão inicial sobre os conceitos de Redes Neurais. Recomenda-se começar o estudo de Redes Neurais com essa playlist.
+[Redes neurais - 3b1b](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi): é uma ótima série de vídeos para se ter uma visão inicial sobre os conceitos de Redes Neurais, principalmente. Recomenda-se começar o estudo de Redes Neurais com essa playlist.
 
 [Coursera - Advanced Learning Algorithms](https://www.coursera.org/learn/advanced-learning-algorithms?specialization=machine-learning-introduction#syllabus): continuação do curso visto na sessão anterior, agora focando em Redes Neurais e conselhos em relação à Machine Learning no geral. 
 
@@ -127,6 +127,3 @@ Construa o código do **[Exercício 5](#exercicio-5)** utilizando o PyTorch.
  
 ### Resoluções dos exercícios
 [Exercício 6](Códigos/mnist_pytorch.ipynb)<br>
-
-
-## LSTM
